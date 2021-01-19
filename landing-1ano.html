@@ -1,0 +1,59 @@
+<html>
+
+<head>
+    <title>Landing 1 ano</title>
+    <link href="landing-1ano.css" rel="stylesheet">
+</head>
+
+<body>
+
+<main class="page-demo" id="page">
+    <div class="titulo-onda">
+        <div class="onda"></div>
+        <div class="container">
+            <div class="titulo">
+                <h1>Oi, <span id="nome" style="text-transform: capitalize;"></span>!</h1>
+                <div class="subtitulo">
+                    <p>Parabéns, hoje é seu aniversário de contrato com a gente! 😄</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section>
+        <p class="txt-video">
+            Reunimos toda a galera aqui e gravamos um vídeo curtinho, mas muito especial. <br>        
+            Aperte o play e confira!
+        </p><br>
+    </section>
+
+    <div class="container">
+        <div class="box-etapas"><br>
+            <section id="demo-etapa-email" class="etapa js--ativo">
+                <iframe width="700" height="396" src="https://www.youtube.com/embed/0yJzkRlvQxo?autoplay=1" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen></iframe>
+            </section>
+        </div>
+        
+    </div>
+</main>
+
+<footer>
+    <div class="footer">
+        Feito com 💚 por EAD Plataforma.
+    </div>
+
+</footer>
+
+<script>
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+    const nome = urlParams.get('nome')
+    document.getElementById("nome").innerHTML = nome;
+</script>
+
+
+</body>
+
+</html>
